@@ -1,0 +1,8 @@
+# config file version
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB
+    type: influxdb
+    url: http://influxdb:8086
+    database: EH-TEMPS
