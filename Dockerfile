@@ -5,7 +5,6 @@ RUN apk update && \
 RUN git clone https://github.com/watchforstock/evohome-client.git
 
 FROM python:3-alpine
-#COPY evohome-client/ /evohome-client/
 COPY --from=gitty evohome-client/ /evohome-client/
 RUN pip install ./evohome-client influxdb
 COPY evohome.py /tmp/
