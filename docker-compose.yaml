@@ -9,13 +9,13 @@ services:
       - ./grafana-config:/etc/grafana/provisioning
       - ./grafana-dashboards:/var/lib/grafana/dashboards
     networks:
-      - test_network
+      - evohome_network
   influxdb:
     image: influxdb
     ports:
       - "8086:8086"
     networks:
-      - test_network
+      - evohome_network
     volumes:
       - ./influxdb:/var/lib/influxdb
   evohome:
@@ -23,11 +23,11 @@ services:
     links:
       - influxdb
     networks:
-      - test_network
+      - evohome_network
     environment:
       - EH-USERNAME=WIBBLE
       - EH-PASSWORD=WOO
 networks:
-  test_network:
+  evohome_network:
 volumes:
   influxdb:
