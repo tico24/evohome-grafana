@@ -18,5 +18,5 @@ http://localhost:3000/explore?orgId=1&left=%5B%22now-5y%22,%22now%22,%22InfluxDB
 
 
 # "Features"
-- If you norse your username/password up, the influx db won't get created and grafana will cry. It should fix itself once you remember you login.
+- If you norse your username/password up, the influx db won't get created and grafana will cry. It should fix itself once you remember your login.
 - The dockerfile does a git clone of the master of watchforstock/evohome-client. This should not be considered a secure or sane way to do things.
