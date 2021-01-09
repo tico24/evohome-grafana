@@ -12,11 +12,10 @@
       }
     ]
   },
-  "description": "Track room temperatures using Honeywell Evohome",
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1610183576298,
+  "iteration": 1610184324449,
   "links": [],
   "panels": [
     {
@@ -43,6 +42,7 @@
     },
     {
       "aliasColors": {
+        "Recorded Temperature": "green",
         "Requested Temperature": "purple",
         "Temperatures.setpoint": "purple"
       },
@@ -58,7 +58,7 @@
         },
         "overrides": []
       },
-      "fill": 2,
+      "fill": 5,
       "fillGradient": 0,
       "gridPos": {
         "h": 8,
@@ -69,7 +69,6 @@
       "hiddenSeries": false,
       "id": 2,
       "legend": {
-        "alignAsTable": false,
         "avg": false,
         "current": false,
         "max": false,
@@ -80,7 +79,7 @@
         "values": false
       },
       "lines": true,
-      "linewidth": 4,
+      "linewidth": 1,
       "nullPointMode": "connected",
       "options": {
         "alertThreshold": true
@@ -103,7 +102,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "alias": "Actual Temperature",
+          "alias": "Recorded Temperature",
           "groupBy": [
             {
               "params": [
@@ -200,7 +199,7 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:161",
+          "$$hashKey": "object:103",
           "format": "celsius",
           "label": null,
           "logBase": 1,
@@ -209,7 +208,7 @@
           "show": true
         },
         {
-          "$$hashKey": "object:162",
+          "$$hashKey": "object:104",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -234,7 +233,7 @@
       },
       "id": 5,
       "panels": [],
-      "repeatIteration": 1610183576298,
+      "repeatIteration": 1610184324449,
       "repeatPanelId": 4,
       "scopedVars": {
         "Room": {
@@ -248,6 +247,7 @@
     },
     {
       "aliasColors": {
+        "Recorded Temperature": "green",
         "Requested Temperature": "purple",
         "Temperatures.setpoint": "purple"
       },
@@ -263,7 +263,7 @@
         },
         "overrides": []
       },
-      "fill": 2,
+      "fill": 5,
       "fillGradient": 0,
       "gridPos": {
         "h": 8,
@@ -274,7 +274,6 @@
       "hiddenSeries": false,
       "id": 6,
       "legend": {
-        "alignAsTable": false,
         "avg": false,
         "current": false,
         "max": false,
@@ -285,7 +284,7 @@
         "values": false
       },
       "lines": true,
-      "linewidth": 4,
+      "linewidth": 1,
       "nullPointMode": "connected",
       "options": {
         "alertThreshold": true
@@ -295,7 +294,7 @@
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1610183576298,
+      "repeatIteration": 1610184324449,
       "repeatPanelId": 2,
       "repeatedByRow": true,
       "scopedVars": {
@@ -311,7 +310,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "alias": "Actual Temperature",
+          "alias": "Recorded Temperature",
           "groupBy": [
             {
               "params": [
@@ -408,7 +407,7 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:161",
+          "$$hashKey": "object:103",
           "format": "celsius",
           "label": null,
           "logBase": 1,
@@ -417,7 +416,7 @@
           "show": true
         },
         {
-          "$$hashKey": "object:162",
+          "$$hashKey": "object:104",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -442,7 +441,7 @@
       },
       "id": 7,
       "panels": [],
-      "repeatIteration": 1610183576298,
+      "repeatIteration": 1610184324449,
       "repeatPanelId": 4,
       "scopedVars": {
         "Room": {
@@ -456,6 +455,7 @@
     },
     {
       "aliasColors": {
+        "Recorded Temperature": "green",
         "Requested Temperature": "purple",
         "Temperatures.setpoint": "purple"
       },
@@ -471,7 +471,7 @@
         },
         "overrides": []
       },
-      "fill": 2,
+      "fill": 5,
       "fillGradient": 0,
       "gridPos": {
         "h": 8,
@@ -482,7 +482,6 @@
       "hiddenSeries": false,
       "id": 8,
       "legend": {
-        "alignAsTable": false,
         "avg": false,
         "current": false,
         "max": false,
@@ -493,7 +492,7 @@
         "values": false
       },
       "lines": true,
-      "linewidth": 4,
+      "linewidth": 1,
       "nullPointMode": "connected",
       "options": {
         "alertThreshold": true
@@ -503,7 +502,7 @@
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1610183576298,
+      "repeatIteration": 1610184324449,
       "repeatPanelId": 2,
       "repeatedByRow": true,
       "scopedVars": {
@@ -519,7 +518,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "alias": "Actual Temperature",
+          "alias": "Recorded Temperature",
           "groupBy": [
             {
               "params": [
@@ -616,7 +615,7 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:161",
+          "$$hashKey": "object:103",
           "format": "celsius",
           "label": null,
           "logBase": 1,
@@ -625,7 +624,7 @@
           "show": true
         },
         {
-          "$$hashKey": "object:162",
+          "$$hashKey": "object:104",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -650,7 +649,7 @@
       },
       "id": 9,
       "panels": [],
-      "repeatIteration": 1610183576298,
+      "repeatIteration": 1610184324449,
       "repeatPanelId": 4,
       "scopedVars": {
         "Room": {
@@ -664,6 +663,7 @@
     },
     {
       "aliasColors": {
+        "Recorded Temperature": "green",
         "Requested Temperature": "purple",
         "Temperatures.setpoint": "purple"
       },
@@ -679,7 +679,7 @@
         },
         "overrides": []
       },
-      "fill": 2,
+      "fill": 5,
       "fillGradient": 0,
       "gridPos": {
         "h": 8,
@@ -690,7 +690,6 @@
       "hiddenSeries": false,
       "id": 10,
       "legend": {
-        "alignAsTable": false,
         "avg": false,
         "current": false,
         "max": false,
@@ -701,7 +700,7 @@
         "values": false
       },
       "lines": true,
-      "linewidth": 4,
+      "linewidth": 1,
       "nullPointMode": "connected",
       "options": {
         "alertThreshold": true
@@ -711,7 +710,7 @@
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1610183576298,
+      "repeatIteration": 1610184324449,
       "repeatPanelId": 2,
       "repeatedByRow": true,
       "scopedVars": {
@@ -727,7 +726,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "alias": "Actual Temperature",
+          "alias": "Recorded Temperature",
           "groupBy": [
             {
               "params": [
@@ -824,7 +823,7 @@
       },
       "yaxes": [
         {
-          "$$hashKey": "object:161",
+          "$$hashKey": "object:103",
           "format": "celsius",
           "label": null,
           "logBase": 1,
@@ -833,7 +832,7 @@
           "show": true
         },
         {
-          "$$hashKey": "object:162",
+          "$$hashKey": "object:104",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -848,7 +847,7 @@
       }
     }
   ],
-  "refresh": "1m",
+  "refresh": "15m",
   "schemaVersion": 26,
   "style": "dark",
   "tags": [],
@@ -889,7 +888,7 @@
     ]
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {},
