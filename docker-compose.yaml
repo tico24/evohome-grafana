@@ -9,21 +9,23 @@ services:
       - ./grafana-config:/etc/grafana/provisioning
       - ./grafana-dashboards:/var/lib/grafana/dashboards
     networks:
-      - evohome_network
+      - evohome
   influxdb:
     image: influxdb
     ports:
       - "8086:8086"
     networks:
-      - evohome_network
+      - evohome
     volumes:
       - ./influxdb:/var/lib/influxdb
   evohome:
     image: evohome:latest
+    depends_on:
+      - influxdb
     links:
       - influxdb
     networks:
-      - evohome_network
+      - evohome
     environment:
       - EH-USERNAME=wibble@email.address
       - EH-PASSWORD=5up3r53cr3tp4ssw0rd1
@@ -31,7 +33,7 @@ services:
       - OW-API-KEY=123123123123
       - OW-CITY=London,uk
 networks:
-  evohome_network:
+  evohome:
 volumes:
   influxdb:
   grafana-storage:
