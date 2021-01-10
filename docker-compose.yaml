@@ -25,9 +25,13 @@ services:
     networks:
       - evohome_network
     environment:
-      - EH-USERNAME=WIBBLE
-      - EH-PASSWORD=WOO
+      - EH-USERNAME=wibble@email.address
+      - EH-PASSWORD=5up3r53cr3tp4ssw0rd1
+      - OW=true
+      - OW-API-KEY=123123123123
+      - OW-CITY=London,uk
 networks:
   evohome_network:
 volumes:
   influxdb:
+  grafana-storage:
