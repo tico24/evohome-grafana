@@ -10,12 +10,14 @@ services:
       - ./grafana-dashboards:/var/lib/grafana/dashboards
     networks:
       - evohome
+    restart: unless-stopped
   influxdb:
     image: influxdb
     ports:
       - "8086:8086"
     networks:
       - evohome
+    restart: unless-stopped
     volumes:
       - ./influxdb:/var/lib/influxdb
   evohome:
@@ -26,6 +28,7 @@ services:
       - influxdb
     networks:
       - evohome
+    restart: unless-stopped
     environment:
       - EH-USERNAME=wibble@email.address
       - EH-PASSWORD=5up3r53cr3tp4ssw0rd1
