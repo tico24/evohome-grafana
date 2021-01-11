@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1610295074399,
+  "iteration": 1610346476964,
   "links": [],
   "panels": [
     {
@@ -50,6 +50,7 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "InfluxDB",
+      "decimals": 1,
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -70,13 +71,14 @@
       "id": 2,
       "legend": {
         "avg": false,
-        "current": false,
+        "current": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": null,
         "total": false,
-        "values": false
+        "values": true
       },
       "lines": true,
       "linewidth": 1,
@@ -239,10 +241,10 @@
         {
           "$$hashKey": "object:103",
           "format": "celsius",
-          "label": null,
+          "label": "",
           "logBase": 1,
           "max": null,
-          "min": "0",
+          "min": null,
           "show": true
         },
         {
@@ -539,7 +541,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Max",
+      "title": "Internal Max",
       "type": "stat"
     },
     {
@@ -633,7 +635,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Max",
+      "title": "Outside Max",
       "type": "stat"
     },
     {
@@ -727,7 +729,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Min",
+      "title": "Internal Min",
       "type": "stat"
     },
     {
@@ -821,7 +823,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Min",
+      "title": "Outside Min",
       "type": "stat"
     },
     {
@@ -835,7 +837,7 @@
       },
       "id": 42,
       "panels": [],
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 4,
       "scopedVars": {
         "zone": {
@@ -857,6 +859,7 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "InfluxDB",
+      "decimals": 1,
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -877,13 +880,14 @@
       "id": 43,
       "legend": {
         "avg": false,
-        "current": false,
+        "current": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": null,
         "total": false,
-        "values": false
+        "values": true
       },
       "lines": true,
       "linewidth": 1,
@@ -896,7 +900,7 @@
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 2,
       "repeatedByRow": true,
       "scopedVars": {
@@ -1049,10 +1053,10 @@
         {
           "$$hashKey": "object:103",
           "format": "celsius",
-          "label": null,
+          "label": "",
           "logBase": 1,
           "max": null,
-          "min": "0",
+          "min": null,
           "show": true
         },
         {
@@ -1112,7 +1116,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 12,
       "repeatedByRow": true,
       "scopedVars": {
@@ -1209,7 +1213,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 39,
       "repeatedByRow": true,
       "scopedVars": {
@@ -1306,7 +1310,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 22,
       "repeatedByRow": true,
       "scopedVars": {
@@ -1358,7 +1362,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Max",
+      "title": "Internal Max",
       "type": "stat"
     },
     {
@@ -1403,7 +1407,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 40,
       "repeatedByRow": true,
       "scopedVars": {
@@ -1455,7 +1459,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Max",
+      "title": "Outside Max",
       "type": "stat"
     },
     {
@@ -1500,7 +1504,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 23,
       "repeatedByRow": true,
       "scopedVars": {
@@ -1552,7 +1556,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Min",
+      "title": "Internal Min",
       "type": "stat"
     },
     {
@@ -1597,7 +1601,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 41,
       "repeatedByRow": true,
       "scopedVars": {
@@ -1649,7 +1653,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Min",
+      "title": "Outside Min",
       "type": "stat"
     },
     {
@@ -1663,7 +1667,7 @@
       },
       "id": 50,
       "panels": [],
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 4,
       "scopedVars": {
         "zone": {
@@ -1685,6 +1689,7 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "InfluxDB",
+      "decimals": 1,
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -1705,13 +1710,14 @@
       "id": 51,
       "legend": {
         "avg": false,
-        "current": false,
+        "current": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": null,
         "total": false,
-        "values": false
+        "values": true
       },
       "lines": true,
       "linewidth": 1,
@@ -1724,7 +1730,7 @@
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 2,
       "repeatedByRow": true,
       "scopedVars": {
@@ -1877,10 +1883,10 @@
         {
           "$$hashKey": "object:103",
           "format": "celsius",
-          "label": null,
+          "label": "",
           "logBase": 1,
           "max": null,
-          "min": "0",
+          "min": null,
           "show": true
         },
         {
@@ -1940,7 +1946,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 12,
       "repeatedByRow": true,
       "scopedVars": {
@@ -2037,7 +2043,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 39,
       "repeatedByRow": true,
       "scopedVars": {
@@ -2134,7 +2140,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 22,
       "repeatedByRow": true,
       "scopedVars": {
@@ -2186,7 +2192,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Max",
+      "title": "Internal Max",
       "type": "stat"
     },
     {
@@ -2231,7 +2237,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 40,
       "repeatedByRow": true,
       "scopedVars": {
@@ -2283,7 +2289,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Max",
+      "title": "Outside Max",
       "type": "stat"
     },
     {
@@ -2328,7 +2334,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 23,
       "repeatedByRow": true,
       "scopedVars": {
@@ -2380,7 +2386,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Min",
+      "title": "Internal Min",
       "type": "stat"
     },
     {
@@ -2425,7 +2431,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 41,
       "repeatedByRow": true,
       "scopedVars": {
@@ -2477,7 +2483,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Min",
+      "title": "Outside Min",
       "type": "stat"
     },
     {
@@ -2491,7 +2497,7 @@
       },
       "id": 58,
       "panels": [],
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 4,
       "scopedVars": {
         "zone": {
@@ -2513,6 +2519,7 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "InfluxDB",
+      "decimals": 1,
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -2533,13 +2540,14 @@
       "id": 59,
       "legend": {
         "avg": false,
-        "current": false,
+        "current": true,
         "max": false,
         "min": false,
         "rightSide": true,
         "show": true,
+        "sideWidth": null,
         "total": false,
-        "values": false
+        "values": true
       },
       "lines": true,
       "linewidth": 1,
@@ -2552,7 +2560,7 @@
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 2,
       "repeatedByRow": true,
       "scopedVars": {
@@ -2705,10 +2713,10 @@
         {
           "$$hashKey": "object:103",
           "format": "celsius",
-          "label": null,
+          "label": "",
           "logBase": 1,
           "max": null,
-          "min": "0",
+          "min": null,
           "show": true
         },
         {
@@ -2768,7 +2776,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 12,
       "repeatedByRow": true,
       "scopedVars": {
@@ -2865,7 +2873,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 39,
       "repeatedByRow": true,
       "scopedVars": {
@@ -2962,7 +2970,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 22,
       "repeatedByRow": true,
       "scopedVars": {
@@ -3014,7 +3022,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Max",
+      "title": "Internal Max",
       "type": "stat"
     },
     {
@@ -3059,7 +3067,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 40,
       "repeatedByRow": true,
       "scopedVars": {
@@ -3111,7 +3119,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Max",
+      "title": "Outside Max",
       "type": "stat"
     },
     {
@@ -3156,7 +3164,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 23,
       "repeatedByRow": true,
       "scopedVars": {
@@ -3208,7 +3216,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Min",
+      "title": "Internal Min",
       "type": "stat"
     },
     {
@@ -3253,7 +3261,7 @@
         "textMode": "auto"
       },
       "pluginVersion": "7.3.6",
-      "repeatIteration": 1610295074399,
+      "repeatIteration": 1610346476964,
       "repeatPanelId": 41,
       "repeatedByRow": true,
       "scopedVars": {
@@ -3305,7 +3313,7 @@
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Min",
+      "title": "Outside Min",
       "type": "stat"
     }
   ],
@@ -3350,7 +3358,7 @@
     ]
   },
   "time": {
-    "from": "now-7d",
+    "from": "now-12h",
     "to": "now"
   },
   "timepicker": {},
