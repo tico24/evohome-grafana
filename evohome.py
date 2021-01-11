@@ -38,7 +38,14 @@ if __name__ == "__main__":
                 temp = weather_data['main']['temp']
                 print([{"measurement":"ext-Temperatures","fields":{'ext-temp': temp}}])
                 client.write_points([{"measurement":"ext-Temperatures","fields":{'ext-temp': temp}}], database='EH-TEMPS')
+
+            # Inform Healthchecks.io
+            if "HEALTHCHECKS-IO" in os.environ:
+                healthchecks = os.environ['HEALTHCHECKS-IO']
+                requests.get(healthchecks)
         
         except ConnectionError as e:
             print("No Database Connection")
         time.sleep(600.0 - ((time.time() - starttime) % 600.0))
+
+

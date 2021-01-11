@@ -5,12 +5,13 @@ A docker-compose stack to collect temperature data from your Honeywell Evohome s
 - Displays the data on a pre-built grafana graph
 
 
-
+# Get started
 Build the container:
 `docker build -t evohome .`
 
 modify the env vars in the docker-compose file for evohome to match your evohome login
-Then start docker-compose
+
+Then start docker-compose:
 `docker-compose up -d`
 
 This creates the database and grafana, it tells grafana how to connect to the database and provisions a basic graph showing requested and actual temperatures for each room.
@@ -27,7 +28,7 @@ http://localhost:3000/explore?orgId=1&left=%5B%22now-5y%22,%22now%22,%22InfluxDB
 The script requests a data update from Evohome once every 10 minutes. If you make this too frequent, you get rate-limited by Evohome.
 
 
-Optional external temperatures
+# Optional external temperatures
 If you want to record external temps, ensure you set the "OW" environment variable to "true"
 
 Sign up at https://openweathermap.org/ for a free account. You'll find an API key (they also email it to you).
@@ -35,6 +36,12 @@ Set the API key and City environment variables. City values can be found here: h
 
 Note that it may take OpenWeatherMap a few hours to activate your api key. If you don't get data immediately, don't be concerned.
 
+# Optional Healthchecks.io integration
+Create a new (free) account at healthchecks.io
+Set the schedule period to 15 minutes. Set the grace time to 1 hour.
+Add the http requests url to the environment variable "HEALTHCHECKS-IO"
+
+The container should ping healthchecks.io after each successful run. If healthchecks.io doesn't receive a ping after 1 hour, you will get notified.
 
 # "Features"
 - If you norse your Evohome username/password up, the influx db won't get created and grafana will cry. It should fix itself once you remember your login.

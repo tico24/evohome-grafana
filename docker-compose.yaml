@@ -35,6 +35,7 @@ services:
       - OW=true
       - OW-API-KEY=123123123123
       - OW-CITY=London,uk
+      - HEALTHCHECKS-IO=https://hc-ping.com/XXXX-YYYY-ZZZZ
 networks:
   evohome:
 volumes:
