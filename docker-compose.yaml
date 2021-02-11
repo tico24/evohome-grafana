@@ -8,6 +8,14 @@ services:
       - ./grafana-storage:/var/lib/grafana
       - ./grafana-config:/etc/grafana/provisioning
       - ./grafana-dashboards:/var/lib/grafana/dashboards
+    environment:
+      - GF_SERVER_ENABLE_GZIP=true
+      - GF_ANALYTICS_CHECK_FOR_UPDATES=false
+      - GF_ANALYTICS_REPORTING_ENABLED=false
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_AUTH_ANONYMOUS_ORG_NAME=Main Org.
+      - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=data/temps.json
     networks:
       - evohome
     restart: unless-stopped
