@@ -24,6 +24,10 @@ if __name__ == "__main__":
             print("Collect and store evohome temperatures")
             eclient = EvohomeClient({username}, {password})
             for device in eclient.temperatures():
+                # Hot Water has null strings for name and setpoint so manually add them
+                if device['thermostat'] == "DOMESTIC_HOT_WATER":
+                    device['setpoint'] = 55.0
+                    device['name'] = "Hot Water"
                 print([{"measurement":"Temperatures","fields":device}])
                 client.write_points([{"measurement":"Temperatures","fields":device}], database='EH-TEMPS')
 
