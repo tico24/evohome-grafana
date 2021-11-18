@@ -2,7 +2,7 @@ version: "3"
 services:
   grafana:
     image: grafana/grafana
-    user: '104'
+    user: 'root'
     ports:
       - "3000:3000"
     volumes:
