@@ -46,4 +46,4 @@ The container should ping healthchecks.io after each successful run. If healthch
 # "Features"
 - If you norse your Evohome username/password up, the influx db won't get created and grafana will cry. It should fix itself once you remember your login.
 - The dockerfile does a git clone of the master of watchforstock/evohome-client. This should not be considered a secure or sane way to do things.
-- There is no security on the Influxdb database.test
+- There is no security on the Influxdb database.
